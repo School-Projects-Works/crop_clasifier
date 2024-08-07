@@ -7,5 +7,11 @@ class Assets {
   static const String imagesLogoDark = 'assets/images/logo_dark.png';
   static const String imagesLogoLight = 'assets/images/logo_light.png';
   static const String imagesSplash = 'assets/images/splash.png';
+  static const String slides1 = 'assets/slides/1.png';
+  static const String slides2 = 'assets/slides/2.png';
+  static const String slides3 = 'assets/slides/3.png';
+  static const String slides4 = 'assets/slides/4.png';
+  static const String slides5 = 'assets/slides/5.png';
+  static const String slides6 = 'assets/slides/6.png';
 
 }

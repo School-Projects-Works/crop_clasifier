@@ -125,7 +125,7 @@ class _HomePageState extends ConsumerState<HomePage> {
                               const Icon(Icons.image_search,
                                   size: 30, color: Colors.white),
                               Text(
-                                'Crop Classifier',
+                                'Farmers Pal',
                                 style: style.bodyStyle(color: Colors.white),
                               ),
                             ],

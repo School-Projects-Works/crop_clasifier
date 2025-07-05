@@ -1,8 +1,9 @@
 import 'dart:convert';
+import 'package:crop_clasifier/features/classifier/services/api_keys.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
-import 'package:crop_clasifier/features/classifier/services/connstants.dart';
+
 
 class GPTServices {
   static Future<bool> isImagePlantOrCrop(Uint8List image) async {
@@ -20,7 +21,7 @@ class GPTServices {
             {
               "role": "system",
               "content":
-                  "You are an expert in determining if an image is a plantt, crop or a part of a plant. Please answer with 'true' or 'false'."
+                  "You are an expert in determining if an image is a plant, crop or a part of a plant. Please answer with 'true' or 'false'."
             },
             {
               "role": "user",
@@ -72,7 +73,7 @@ class GPTServices {
                 {
                   "type": "text",
                   "text":
-                      'What plant,crop or fruit is in this image? Please provide a comprehensive detailed description.Details should span from the plant\'s name, its uses, and its origin, category, species, common disease etc. Fotmat the content as follows: Seperate content into three ,name, category and description. User "//c!s" to deperate each of them. Example Name=Plant name //c!s category =plant category //c!s description =All the remaining details about the plant in markdown format. Format the description as a markdown text. Add images if possible. the description should me more and very detailed with a lot of innformation and well formatted with markdown text.'},
+                      'What plant,crop or fruit is in this image? Please provide a comprehensive detailed description.Details should span from the plant\'s name, its uses, and its origin, category, species, common disease etc. Format the content as follows: Separate content into three ,name, category and description. User "//c!s" to separate each of them. Example Name=Plant name //c!s category =plant category //c!s description =All the remaining details about the plant in markdown format. Format the description as a markdown text. Add images if possible. the description should me more and very detailed with a lot of information and well formatted with markdown text.'},
                 {
                   "type": "image_url",
                   "image_url": {"url": "data:image/jpeg;base64,$base64Image"}

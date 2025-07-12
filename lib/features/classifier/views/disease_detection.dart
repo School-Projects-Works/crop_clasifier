@@ -1,6 +1,6 @@
 // ignore_for_file: use_build_context_synchronously
 
-import 'package:carousel_slider/carousel_slider.dart';
+import 'package:carousel_slider/carousel_slider.dart' as Carousel;
 import 'package:crop_clasifier/features/classifier/data/disease_model.dart';
 import 'package:crop_clasifier/features/classifier/services/disease_services.dart';
 import 'package:crop_clasifier/features/classifier/views/view_disease.dart';
@@ -39,6 +39,7 @@ class _DiseaseDetectionState extends ConsumerState<DiseaseDetection> {
     },
     
   ];
+//  var carouselController = Carousel.CarouselController();
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
@@ -63,8 +64,9 @@ class _DiseaseDetectionState extends ConsumerState<DiseaseDetection> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                CarouselSlider(
-                  options: CarouselOptions(
+                Carousel.CarouselSlider(
+                  //carouselController: carouselController,
+                  options: Carousel.CarouselOptions(
                     height: 200.0,
                     aspectRatio: 1,
                     viewportFraction: 1,

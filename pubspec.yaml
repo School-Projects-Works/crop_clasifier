@@ -15,29 +15,29 @@ dependencies:
 
   cupertino_icons: ^1.0.8
   google_fonts: ^6.2.1
-  flutter_native_splash: ^2.4.1
-  riverpod: ^2.5.1
-  flutter_riverpod: ^2.5.1
+  flutter_native_splash: ^2.4.6
+  riverpod: ^2.6.1
+  flutter_riverpod: ^2.6.1
   image_picker: ^1.1.2
-  flutter_markdown: ^0.7.3
-  flutter_smart_dialog: ^4.9.7+9
-  firebase_core: ^2.24.2
-  cloud_firestore: ^4.14.0
-  firebase_storage: ^11.6.0
-  cached_network_image: ^3.4.0
+  flutter_markdown: ^0.7.7+1
+  flutter_smart_dialog: ^4.9.8+8
+  firebase_core: ^3.15.1
+  cloud_firestore: ^5.6.11
+  firebase_storage: ^12.4.9
+  cached_network_image: ^3.4.1
   modal_bottom_sheet: ^3.0.0
-  carousel_slider: ^4.2.1
-  http: ^1.2.2
-  shared_preferences: ^2.3.1
-  firebase_auth: ^4.16.0
-  image_cropper: ^8.0.1
+  carousel_slider: ^5.1.1
+  http: ^1.4.0
+  shared_preferences: ^2.5.3
+  firebase_auth: ^5.6.2
+  image_cropper: ^9.1.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  flutter_lints: ^4.0.0
-  flutter_launcher_icons: ^0.13.1
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
 
 
 flutter:

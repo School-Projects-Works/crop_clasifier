@@ -1,6 +1,6 @@
 // ignore_for_file: use_build_context_synchronously
 
-import 'package:carousel_slider/carousel_slider.dart';
+import 'package:carousel_slider/carousel_slider.dart' ;
 import 'package:crop_clasifier/core/views/custom_dialog.dart';
 import 'package:crop_clasifier/features/classifier/views/view_details.dart';
 import 'package:crop_clasifier/features/plants/data/plant_model.dart';
@@ -46,6 +46,7 @@ class _ClassifierPageState extends ConsumerState<ClassifierPage> {
       'image': Assets.slides4
     },
   ];
+  var carouselController = CarouselController();
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
@@ -71,6 +72,7 @@ class _ClassifierPageState extends ConsumerState<ClassifierPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 CarouselSlider(
+                 // carouselController: carouselController,
                   options: CarouselOptions(
                     height: 200.0,
                     aspectRatio: 1,

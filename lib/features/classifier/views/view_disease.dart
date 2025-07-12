@@ -10,7 +10,6 @@ import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
 import '../../../utils/app_colors.dart';
 import '../../../utils/text_styles.dart';
 import '../../auth/provider/user_provider.dart';
-import '../../plants/services/plant_services.dart';
 
 class ViewDisease extends ConsumerStatefulWidget {
   const ViewDisease({super.key, required this.plantModel});

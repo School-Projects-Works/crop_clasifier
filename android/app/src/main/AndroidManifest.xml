@@ -1,12 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="Crop Class"
+        android:label="Farmers Pal"
         android:name="${applicationName}"
-        android:icon="@mipmap/launcher_icon">
-        <activity
-    android:name="com.yalantis.ucrop.UCropActivity"
-    android:screenOrientation="portrait"
-    android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
             android:exported="true"

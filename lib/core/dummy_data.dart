@@ -1,8 +1,8 @@
-
 List<Map<String, dynamic>> dummyCrops = [
   {
     "title": "Cocoa 🍫",
-    "imageUrl":"https://media.greg.app/cGxhbnQtZGItcGhvdG9zLzEzMzU0MzU1NF81MDI2ODI0NjA3MDQ3MDJfOTE3ODEwMzA5ODQxMzU5MTA5MV9uLmpwZw==?auto=webp&width=1000&fit=cover&format=pjpg&height=1000&optimize=medium&precrop=1000:1000,smart",
+    "imageUrl":
+        "https://media.greg.app/cGxhbnQtZGItcGhvdG9zLzEzMzU0MzU1NF81MDI2ODI0NjA3MDQ3MDJfOTE3ODEwMzA5ODQxMzU5MTA5MV9uLmpwZw==?auto=webp&width=1000&fit=cover&format=pjpg&height=1000&optimize=medium&precrop=1000:1000,smart",
     "description": """
 **Species:** Theobroma cacao
 **Scientific Name:** Theobroma cacao
@@ -12,7 +12,8 @@ List<Map<String, dynamic>> dummyCrops = [
   },
   {
     "title": "Maize 🌽",
-    "imageUrl":"https://png.pngtree.com/png-clipart/20230825/original/pngtree-corn-plant-agricultural-agriculture-blossom-picture-image_8472706.png",
+    "imageUrl":
+        "https://png.pngtree.com/png-clipart/20230825/original/pngtree-corn-plant-agricultural-agriculture-blossom-picture-image_8472706.png",
     "description": """
 **Species:** Zea mays
 **Scientific Name:** Zea mays
@@ -22,7 +23,8 @@ List<Map<String, dynamic>> dummyCrops = [
   },
   {
     "title": "Cassava 🌿",
-    "imageUrl":"https://media.istockphoto.com/id/1184522846/vector/cassava-tree-plant-cassava-rhizomes-isolated-on-white-background-manioc-cassava-roots.jpg?s=612x612&w=0&k=20&c=BXHqmlvK3WVYjADW3ycXmHcHxVr7ygRGei0q3ozCdg4=",
+    "imageUrl":
+        "https://media.istockphoto.com/id/1184522846/vector/cassava-tree-plant-cassava-rhizomes-isolated-on-white-background-manioc-cassava-roots.jpg?s=612x612&w=0&k=20&c=BXHqmlvK3WVYjADW3ycXmHcHxVr7ygRGei0q3ozCdg4=",
     "description": """
 **Species:** Manihot esculenta
 **Scientific Name:** Manihot esculenta
@@ -32,7 +34,8 @@ List<Map<String, dynamic>> dummyCrops = [
   },
   {
     "title": "Yam 🍠",
-    "imageUrl":"https://morningchores.com/wp-content/uploads/2019/12/Yam-Plant.jpg",
+    "imageUrl":
+        "https://morningchores.com/wp-content/uploads/2019/12/Yam-Plant.jpg",
     "description": """
 **Species:** Dioscorea spp.
 **Scientific Name:** Dioscorea spp.
@@ -42,7 +45,8 @@ List<Map<String, dynamic>> dummyCrops = [
   },
   {
     "title": "Plantain 🍌",
-    "imageUrl":"https://plantvillage-production-new.s3.amazonaws.com/image/296/file/default-5acb007ea14e17eee063a324726a6a40.jpg",
+    "imageUrl":
+        "https://plantvillage-production-new.s3.amazonaws.com/image/296/file/default-5acb007ea14e17eee063a324726a6a40.jpg",
     "description": """
 **Species:** Musa spp.
 **Scientific Name:** Musa spp.
@@ -52,7 +56,8 @@ List<Map<String, dynamic>> dummyCrops = [
   },
   {
     "title": "Rice 🍚",
-    "imageUrl":"https://live.staticflickr.com/2876/13596682363_f72a824838_c.jpg",
+    "imageUrl":
+        "https://live.staticflickr.com/2876/13596682363_f72a824838_c.jpg",
     "description": """
 **Species:** Oryza sativa
 **Scientific Name:** Oryza sativa
@@ -62,7 +67,8 @@ List<Map<String, dynamic>> dummyCrops = [
   },
   {
     "title": "Oil Palm 🌴",
-    "imageUrl":"https://www.shutterstock.com/image-photo/oil-plam-tree-isolated-on-600nw-2214494059.jpg",
+    "imageUrl":
+        "https://www.shutterstock.com/image-photo/oil-plam-tree-isolated-on-600nw-2214494059.jpg",
     "description": """
 **Species:** Elaeis guineensis
 **Scientific Name:** Elaeis guineensis
@@ -72,7 +78,8 @@ List<Map<String, dynamic>> dummyCrops = [
   },
   {
     "title": "Groundnut 🥜",
-    "imageUrl":"https://ogden_images.s3.amazonaws.com/www.motherearthnews.com/images/2013/12/22194322/Peanuts-Illustration-550-jpg.jpg",
+    "imageUrl":
+        "https://ogden_images.s3.amazonaws.com/www.motherearthnews.com/images/2013/12/22194322/Peanuts-Illustration-550-jpg.jpg",
     "description": """
 **Species:** Arachis hypogaea
 **Scientific Name:** Arachis hypogaea
@@ -82,7 +89,8 @@ List<Map<String, dynamic>> dummyCrops = [
   },
   {
     "title": "Tomato 🍅",
-    "imageUrl":"https://www.southernliving.com/thmb/8sJLpOMVrdM3RO6GeyuSVAJa9G8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1365178498-81dd069cd1514e288e68516bc96df8d4.jpg",
+    "imageUrl":
+        "https://www.southernliving.com/thmb/8sJLpOMVrdM3RO6GeyuSVAJa9G8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1365178498-81dd069cd1514e288e68516bc96df8d4.jpg",
     "description": """
 **Species:** Solanum lycopersicum
 **Scientific Name:** Solanum lycopersicum
@@ -92,7 +100,8 @@ List<Map<String, dynamic>> dummyCrops = [
   },
   {
     "title": "Pepper 🌶️",
-    "imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhCJJ4_dEztlK8wItc4f5epZFFBlpB2gQkpU0jDxa1rj-q-BMvA9eTsWY4aOf9rf1-NRg&usqp=CAU",
+    "imageUrl":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhCJJ4_dEztlK8wItc4f5epZFFBlpB2gQkpU0jDxa1rj-q-BMvA9eTsWY4aOf9rf1-NRg&usqp=CAU",
     "description": """
 **Species:** Capsicum spp.
 **Scientific Name:** Capsicum spp.
@@ -102,7 +111,8 @@ List<Map<String, dynamic>> dummyCrops = [
   },
   {
     "title": "Millet 🌾",
-    "imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkmpLa80gwx0hrwvydy5WC88sFMQsjuqS8Ug&s",
+    "imageUrl":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkmpLa80gwx0hrwvydy5WC88sFMQsjuqS8Ug&s",
     "description": """
 **Species:** Pennisetum glaucum
 **Scientific Name:** Pennisetum glaucum
@@ -112,7 +122,8 @@ List<Map<String, dynamic>> dummyCrops = [
   },
   {
     "title": "Sorghum 🌿",
-    "imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf8opJfc78ryPmHktRFe32aTEve6E926cc5A&s",
+    "imageUrl":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf8opJfc78ryPmHktRFe32aTEve6E926cc5A&s",
     "description": """
 **Species:** Sorghum bicolor
 **Scientific Name:** Sorghum bicolor
@@ -122,7 +133,8 @@ List<Map<String, dynamic>> dummyCrops = [
   },
   {
     "title": "Cowpea 🫘",
-    "imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOunw3jG4bP6B-0ZCi9jRyGm41anV_u5ydKA&s",
+    "imageUrl":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOunw3jG4bP6B-0ZCi9jRyGm41anV_u5ydKA&s",
     "description": """
 **Species:** Vigna unguiculata
 **Scientific Name:** Vigna unguiculata
@@ -132,7 +144,8 @@ List<Map<String, dynamic>> dummyCrops = [
   },
   {
     "title": "Okra 🌱",
-    "imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFo9hive7O66WZkFFHEunc97thQrfQ3lZkag&s",
+    "imageUrl":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFo9hive7O66WZkFFHEunc97thQrfQ3lZkag&s",
     "description": """
 **Species:** Abelmoschus esculentus
 **Scientific Name:** Abelmoschus esculentus
@@ -142,7 +155,8 @@ List<Map<String, dynamic>> dummyCrops = [
   },
   {
     "title": "Mango 🥭",
-    "imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc5myE2YdOgpTEHrlvrFdkPOYsZwZ5K7_AcQ&s",
+    "imageUrl":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc5myE2YdOgpTEHrlvrFdkPOYsZwZ5K7_AcQ&s",
     "description": """
 **Species:** Mangifera indica
 **Scientific Name:** Mangifera indica
@@ -152,7 +166,8 @@ List<Map<String, dynamic>> dummyCrops = [
   },
   {
     "title": "Pineapple 🍍",
-    "ImageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjy_3xYzwlZtlm37w3hujEXUGhiDG47FGGyhFYniC_1Zd2Kwoa1lvOjLzj7xaqu4veykQ&usqp=CAU",
+    "ImageUrl":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjy_3xYzwlZtlm37w3hujEXUGhiDG47FGGyhFYniC_1Zd2Kwoa1lvOjLzj7xaqu4veykQ&usqp=CAU",
     "description": """
 **Species:** Ananas comosus
 **Scientific Name:** Ananas comosus
@@ -162,7 +177,8 @@ List<Map<String, dynamic>> dummyCrops = [
   },
   {
     "title": "Papaya (Pawpaw) 🍈",
-    "imageUrl":"https://www.oxfarmorganic.com/wp-content/uploads/2017/06/manage-oxfarm.jpg",
+    "imageUrl":
+        "https://www.oxfarmorganic.com/wp-content/uploads/2017/06/manage-oxfarm.jpg",
     "description": """
 **Species:** Carica papaya
 **Scientific Name:** Carica papaya
@@ -170,10 +186,9 @@ List<Map<String, dynamic>> dummyCrops = [
 **Common Diseases:** 🌱 Papaya ringspot virus causes characteristic rings on leaves and fruits, leading to reduced yield and quality. Anthracnose, caused by Colletotrichum gloeosporioides, results in dark lesions on fruits and leaves. Powdery mildew, caused by Oidium caricae, produces a white, powdery growth on leaves.
 """
   },
-
   {
     "title": "Cocoyam 🌰",
-    "imageUrl":"https://strapi.myplantin.com/large_large_4_345c245336.webp",
+    "imageUrl": "https://strapi.myplantin.com/large_large_4_345c245336.webp",
     "description": """
 **Species:** Colocasia esculenta
 **Scientific Name:** Colocasia esculenta
@@ -183,7 +198,8 @@ List<Map<String, dynamic>> dummyCrops = [
   },
   {
     "title": "Sweet Potato 🍠",
-    "imageUrl":"https://gardenerspath.com/wp-content/uploads/2018/06/Sweet-Potatoes.jpg",
+    "imageUrl":
+        "https://gardenerspath.com/wp-content/uploads/2018/06/Sweet-Potatoes.jpg",
     "description": """
 **Species:** Ipomoea batatas
 **Scientific Name:** Ipomoea batatas
@@ -191,10 +207,10 @@ List<Map<String, dynamic>> dummyCrops = [
 **Common Diseases:** 🌱 Sweet potato virus disease complex, caused by a combination of viruses, leads to yellowing and stunted growth. Fusarium wilt, caused by Fusarium oxysporum, results in wilting and yellowing of plants. Sweet potato weevil, a pest, causes damage to roots and tubers, reducing yield and quality.
 """
   },
-
   {
     "title": "Cabbage 🥬",
-    "imageUrl":"https://cdn.mos.cms.futurecdn.net/buTWyK9p8kmA3yRXipfrA8-415-80.jpg",
+    "imageUrl":
+        "https://cdn.mos.cms.futurecdn.net/buTWyK9p8kmA3yRXipfrA8-415-80.jpg",
     "description": """
 **Species:** Brassica oleracea
 **Scientific Name:** Brassica oleracea
@@ -204,7 +220,8 @@ List<Map<String, dynamic>> dummyCrops = [
   },
   {
     "title": "Onion 🧅",
-    "imageUrl":"https://www.alphafoodie.com/wp-content/uploads/2020/03/Square-photo-of-growing-onions.jpeg",
+    "imageUrl":
+        "https://www.alphafoodie.com/wp-content/uploads/2020/03/Square-photo-of-growing-onions.jpeg",
     "description": """
 **Species:** Allium cepa
 **Scientific Name:** Allium cepa
@@ -214,7 +231,8 @@ List<Map<String, dynamic>> dummyCrops = [
   },
   {
     "title": "Beans 🫘",
-    "imageUrl":"https://cdn.britannica.com/06/220806-050-70157D34/Cowpea-Vigna-unguiculata-pods-black-eyed-pea.jpg",
+    "imageUrl":
+        "https://cdn.britannica.com/06/220806-050-70157D34/Cowpea-Vigna-unguiculata-pods-black-eyed-pea.jpg",
     "description": """
 **Species:** Phaseolus vulgaris
 **Scientific Name:** Phaseolus vulgaris

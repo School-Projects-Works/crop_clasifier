@@ -1,6 +1,6 @@
 // ignore_for_file: use_build_context_synchronously
 
-import 'package:carousel_slider/carousel_slider.dart' as Carousel;
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:crop_clasifier/features/classifier/data/disease_model.dart';
 import 'package:crop_clasifier/features/classifier/services/disease_services.dart';
 import 'package:crop_clasifier/features/classifier/views/view_disease.dart';
@@ -9,12 +9,10 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:image_cropper/image_cropper.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
-
 import '../../../core/views/custom_dialog.dart';
 import '../../../generated/assets.dart';
 import '../../../utils/app_colors.dart';
 import '../../../utils/text_styles.dart';
-import '../../plants/data/plant_model.dart';
 import '../services/open_ai_services.dart';
 
 class DiseaseDetection extends ConsumerStatefulWidget {
@@ -64,9 +62,9 @@ class _DiseaseDetectionState extends ConsumerState<DiseaseDetection> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Carousel.CarouselSlider(
+                CarouselSlider(
                   //carouselController: carouselController,
-                  options: Carousel.CarouselOptions(
+                  options: CarouselOptions(
                     height: 200.0,
                     aspectRatio: 1,
                     viewportFraction: 1,

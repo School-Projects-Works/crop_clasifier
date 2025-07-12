@@ -7,6 +7,7 @@ import 'package:crop_clasifier/features/classifier/views/disease_detection.dart'
 import 'package:crop_clasifier/generated/assets.dart';
 import 'package:crop_clasifier/utils/app_colors.dart';
 import 'package:crop_clasifier/utils/text_styles.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
@@ -29,11 +30,17 @@ class _HomePageState extends ConsumerState<HomePage> {
     var plantsStream = ref.watch(plantSreamProvider);
     var size = MediaQuery.of(context).size;
     dummyData.when(data: (value) {
-      print('Data loaded');
+      if (kDebugMode) {
+        print('Data loaded');
+      }
     }, loading: () {
-      print('Loading data');
+      if (kDebugMode) {
+        print('Loading data');
+      }
     }, error: (error, stackTrace) {
-      print('Error loading data');
+      if (kDebugMode) {
+        print('Error loading data');
+      }
     });
     return SafeArea(
         child: Scaffold(
@@ -119,6 +126,7 @@ class _HomePageState extends ConsumerState<HomePage> {
                           margin: const EdgeInsets.only(top: 20),
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(20),
+                              // ignore: deprecated_member_use
                               color: primaryColor.withOpacity(0.6)),
                           child: Column(
                             children: [

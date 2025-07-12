@@ -4,6 +4,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:crop_clasifier/features/classifier/data/disease_model.dart';
 import 'package:crop_clasifier/features/classifier/services/disease_services.dart';
 import 'package:crop_clasifier/features/classifier/views/view_disease.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:image_cropper/image_cropper.dart';
@@ -265,9 +266,15 @@ class _DiseaseDetectionState extends ConsumerState<DiseaseDetection> {
       if (results) {
         //Navigator.pushNamed(context, '/crop');
         var content = await GPTServices.getPlantDisease(imageToByte);
-        print('Content ===================================');
-        print(content);
-        print('===========================================');
+        if (kDebugMode) {
+          print('Content ===================================');
+        }
+        if (kDebugMode) {
+          print(content);
+        }
+        if (kDebugMode) {
+          print('===========================================');
+        }
         DiseaseModel disease = DiseaseModel(
             name: content!['name'],
             description: content['description'],

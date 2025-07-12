@@ -55,6 +55,8 @@ flutter_native_splash:
   ios: true
   web: true
   android_12:
+    image: assets/images/splash.png
+    color: "#ffffff"
   #dart run flutter_native_splash:create
 flutter_launcher_icons:
   android: "launcher_icon"

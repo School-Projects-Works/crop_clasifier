@@ -204,9 +204,9 @@ class _HomePageState extends ConsumerState<HomePage> {
                                     gridDelegate:
                                         const SliverGridDelegateWithFixedCrossAxisCount(
                                             crossAxisCount: 2,
-                                            crossAxisSpacing: 10,
+                                            crossAxisSpacing: 5,
                                             childAspectRatio: 0.8,
-                                            mainAxisSpacing: 10),
+                                            mainAxisSpacing: 5),
                                     itemCount: plants.length,
                                     itemBuilder: (context, index) {
                                       var plant = plants[index];
@@ -248,7 +248,7 @@ class _HomePageState extends ConsumerState<HomePage> {
                                                   imageUrl: plant.imageUrl,
                                                   fit: BoxFit.cover,
                                                   width: double.infinity,
-                                                  height: size.height * 0.2,
+                                                  height: size.height * 0.18,
                                                   placeholder: (context, url) =>
                                                       const Center(
                                                     child: Column(
@@ -271,21 +271,23 @@ class _HomePageState extends ConsumerState<HomePage> {
                                               ),
                                             ),
                                             const SizedBox(
-                                              height: 10,
+                                              height: 8,
                                             ),
                                             Text(
                                               plant.name,
+                                              maxLines: 1,
+                                              overflow: TextOverflow.ellipsis,
                                               style: style.bodyStyle(
-                                                  fontSize: 18,
+                                                  fontSize: 16,
                                                   fontWeight: FontWeight.bold,
                                                   color: primaryColor),
                                             ),
                                             Text(
                                               plant.category,
                                               style: style.bodyStyle(
-                                                  fontSize: 14,
+                                                  fontSize: 13,
                                                   fontWeight: FontWeight.w300,
-                                                  color: secondaryColor),
+                                                  color: Colors.black54),
                                             ),
                                           ],
                                         ),

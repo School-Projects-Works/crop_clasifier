@@ -6,7 +6,6 @@ import 'package:crop_clasifier/features/auth/services/auth_services.dart';
 import 'package:crop_clasifier/features/auth/views/login_page.dart';
 import 'package:crop_clasifier/features/home/views/home_page.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -83,6 +82,30 @@ class UserProvider extends StateNotifier<UserModel> {
 
   void setPhone(String? phone) {
     state = state.copyWith(phone: phone);
+  }
+
+  //logout user
+  void logoutUser(BuildContext context) async {
+    CustomDialogs.loading(
+      message: 'Logging out...',
+    );
+    var data = await AuthServices.logout();
+    if (data) {
+      SharedPreferences prefs = await SharedPreferences.getInstance();
+      prefs.remove('user');
+      clearUser();
+      CustomDialogs.dismiss();
+      CustomDialogs.toast(message: 'Logout successful', type: DialogType.success);
+      //pop to login
+      Navigator.pushAndRemoveUntil(
+        context,
+        MaterialPageRoute(builder: (context) => const LoginPage()),
+        (route) => false,
+      );
+    } else {
+      CustomDialogs.dismiss();
+      CustomDialogs.toast(message: 'Logout failed. Try again', type: DialogType.error);
+    }
   }
 }
 

@@ -30,4 +30,13 @@ class AuthServices{
       return null;
     }
   }
+
+  static Future<bool> logout() async {
+    try {
+      await _auth.signOut();
+      return true;
+    } catch (e) {
+      return false;
+    }
+  }
 }

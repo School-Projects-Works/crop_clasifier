@@ -89,11 +89,34 @@ class _HomePageState extends ConsumerState<HomePage> {
                               style: style.bodyStyle(color: Colors.white),
                             ))
                       else
-                        const CircleAvatar(
-                          radius: 20,
-                          backgroundColor: secondaryColor,
-                          child: Icon(Icons.person),
-                        )
+                        PopupMenuButton(
+                            itemBuilder: (context) {
+                              return [
+                                PopupMenuItem(
+                                  onTap: () {
+                                    ref.read(userProvider.notifier).logoutUser(context);
+                                  },
+                                  child: Text(
+                                    'Sign out',
+                                    style: style.bodyStyle(color: Colors.black),
+                                  ),
+                                ),
+                              ];
+                            },
+                            child: Column(
+                              children: [
+                                CircleAvatar(
+                                  radius: 16,
+                                  backgroundColor: secondaryColor,
+                                  child: Icon(Icons.person),
+                                ),
+                                Text(ref.watch(userProvider).name,
+                                    style: style.bodyStyle(
+                                        color: Colors.white,
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.w500)),
+                              ],
+                            )),
                     ],
                   )
                 ],

@@ -1,6 +1,6 @@
 // ignore_for_file: use_build_context_synchronously
 
-import 'package:carousel_slider/carousel_slider.dart' ;
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:crop_clasifier/core/views/custom_dialog.dart';
 import 'package:crop_clasifier/features/classifier/views/view_details.dart';
 import 'package:crop_clasifier/features/plants/data/plant_model.dart';
@@ -68,160 +68,162 @@ class _ClassifierPageState extends ConsumerState<ClassifierPage> {
       body: Stack(
         children: [
           Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                CarouselSlider(
-                 // carouselController: carouselController,
-                  options: CarouselOptions(
-                    height: 200.0,
-                    aspectRatio: 1,
-                    viewportFraction: 1,
-                    autoPlay: true,
-                  ),
-                  items: listOfSlides.map((slide) {
-                    return Builder(
-                      builder: (BuildContext context) {
-                        return Stack(
-                          children: [
-                            Container(
-                              width: double.infinity,
-                              height: 200,
-                              margin: const EdgeInsets.all(10),
-                              decoration: BoxDecoration(
-                                color: secondaryColor,
-                                borderRadius: BorderRadius.circular(10),
-                              ),
-                              child: Image.asset(
-                                slide['image'],
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                            Container(
-                              width: double.infinity,
-                              height: 200,
-                              margin: const EdgeInsets.all(10),
-                              decoration: BoxDecoration(
-                                color: Colors.black.withOpacity(0.5),
-                                borderRadius: BorderRadius.circular(10),
-                              ),
-                              child: Center(
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Text(
-                                      slide['title'],
-                                      textAlign: TextAlign.center,
-                                      style: style.bodyStyle(
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 20),
-                                    ),
-                                    Text(
-                                      slide['description'],
-                                      textAlign: TextAlign.center,
-                                      style:
-                                          style.bodyStyle(color: Colors.white),
-                                    ),
-                                  ],
+            child: SingleChildScrollView(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  CarouselSlider(
+                    // carouselController: carouselController,
+                    options: CarouselOptions(
+                      height: 200.0,
+                      aspectRatio: 1,
+                      viewportFraction: 1,
+                      autoPlay: true,
+                    ),
+                    items: listOfSlides.map((slide) {
+                      return Builder(
+                        builder: (BuildContext context) {
+                          return Stack(
+                            children: [
+                              Container(
+                                width: double.infinity,
+                                height: 200,
+                                margin: const EdgeInsets.all(10),
+                                decoration: BoxDecoration(
+                                  color: secondaryColor,
+                                  borderRadius: BorderRadius.circular(10),
+                                ),
+                                child: Image.asset(
+                                  slide['image'],
+                                  fit: BoxFit.cover,
                                 ),
                               ),
-                            )
-                          ],
-                        );
-                      },
-                    );
-                  }).toList(),
-                ),
-                const SizedBox(
-                  height: 20,
-                ),
-                Image.asset(
-                  Assets.imagesLogoLight,
-                  width: size.width * 0.3,
-                ),
-                Padding(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                  child: Text(
-                      'We save the farmer from the stress of crop disease',
-                      textAlign: TextAlign.center,
-                      style: style.bodyStyle(
-                          color: Colors.black, fontWeight: FontWeight.w400)),
-                ),
-                InkWell(
-                  onTap: () {
-                    _pickImage(source: ImageSource.camera);
-                  },
-                  child: Container(
-                    width: double.infinity,
-                    margin: const EdgeInsets.symmetric(
-                        horizontal: 20, vertical: 10),
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 15, vertical: 10),
-                    decoration: BoxDecoration(
-                      color: primaryColor,
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: Row(
-                      children: [
-                        Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text('Take Picture',
-                                  style: style.bodyStyle(
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.bold)),
-                              Text('Take a picture of the crop',
-                                  style: style.captionStyle(
-                                      color: secondaryColor)),
+                              Container(
+                                width: double.infinity,
+                                height: 200,
+                                margin: const EdgeInsets.all(10),
+                                decoration: BoxDecoration(
+                                  color: Colors.black.withOpacity(0.5),
+                                  borderRadius: BorderRadius.circular(10),
+                                ),
+                                child: Center(
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Text(
+                                        slide['title'],
+                                        textAlign: TextAlign.center,
+                                        style: style.bodyStyle(
+                                            color: Colors.white,
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20),
+                                      ),
+                                      Text(
+                                        slide['description'],
+                                        textAlign: TextAlign.center,
+                                        style: style.bodyStyle(
+                                            color: Colors.white),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              )
                             ],
+                          );
+                        },
+                      );
+                    }).toList(),
+                  ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  Image.asset(
+                    Assets.imagesLogoLight,
+                    width: size.width * 0.3,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 20, vertical: 10),
+                    child: Text(
+                        'We save the farmer from the stress of crop disease',
+                        textAlign: TextAlign.center,
+                        style: style.bodyStyle(
+                            color: Colors.black, fontWeight: FontWeight.w400)),
+                  ),
+                  InkWell(
+                    onTap: () {
+                      _pickImage(source: ImageSource.camera);
+                    },
+                    child: Container(
+                      width: double.infinity,
+                      margin: const EdgeInsets.symmetric(
+                          horizontal: 20, vertical: 10),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 15, vertical: 10),
+                      decoration: BoxDecoration(
+                        color: primaryColor,
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text('Take Picture',
+                                    style: style.bodyStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold)),
+                                Text('Take a picture of the crop',
+                                    style: style.captionStyle(
+                                        color: secondaryColor)),
+                              ],
+                            ),
                           ),
-                        ),
-                        const Icon(Icons.camera_enhance_outlined,
-                            size: 30, color: Colors.white),
-                      ],
+                          const Icon(Icons.camera_enhance_outlined,
+                              size: 30, color: Colors.white),
+                        ],
+                      ),
                     ),
                   ),
-                ),
-                InkWell(
-                  onTap: () {
-                    _pickImage(source: ImageSource.gallery);
-                  },
-                  child: Container(
-                    width: double.infinity,
-                    margin: const EdgeInsets.symmetric(
-                        horizontal: 20, vertical: 10),
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 15, vertical: 10),
-                    decoration: BoxDecoration(
-                      color: primaryColor,
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: Row(
-                      children: [
-                        Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text('Choose from Gallery',
-                                  style: style.bodyStyle(
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.bold)),
-                              Text('Choose a picture from gallery',
-                                  style: style.captionStyle(
-                                      color: secondaryColor)),
-                            ],
+                  InkWell(
+                    onTap: () {
+                      _pickImage(source: ImageSource.gallery);
+                    },
+                    child: Container(
+                      width: double.infinity,
+                      margin: const EdgeInsets.symmetric(
+                          horizontal: 20, vertical: 10),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 15, vertical: 10),
+                      decoration: BoxDecoration(
+                        color: primaryColor,
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text('Choose from Gallery',
+                                    style: style.bodyStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold)),
+                                Text('Choose a picture from gallery',
+                                    style: style.captionStyle(
+                                        color: secondaryColor)),
+                              ],
+                            ),
                           ),
-                        ),
-                        const Icon(Icons.photo_library_outlined,
-                            size: 30, color: Colors.white),
-                      ],
+                          const Icon(Icons.photo_library_outlined,
+                              size: 30, color: Colors.white),
+                        ],
+                      ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
           if (_isLoaded)
@@ -253,7 +255,7 @@ class _ClassifierPageState extends ConsumerState<ClassifierPage> {
         uiSettings: [
           AndroidUiSettings(
             toolbarTitle: 'Cropper',
-            toolbarColor: Colors.deepOrange,
+            toolbarColor: Colors.green,
             toolbarWidgetColor: Colors.white,
             aspectRatioPresets: [
               CropAspectRatioPreset.original,
